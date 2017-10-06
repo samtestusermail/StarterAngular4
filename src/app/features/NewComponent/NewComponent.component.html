@@ -1,0 +1,12 @@
+<div>Hello </div>
+<div>
+    Parent: {{ myCount }}
+    <!-- {{user.num}}
+    {{user$}} 
+    {{myCount$}}-->
+    <counter
+      [count]="myCount"
+      (change)="countChange($event)">
+    </counter> 
+    {{ store }}
+</div>
