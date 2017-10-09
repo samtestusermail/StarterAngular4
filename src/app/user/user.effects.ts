@@ -38,7 +38,7 @@ export class UserEffects {
       debugger;
       console.log('the payload was: ' + payload.myCount);
       
-      return Observable.of({type: "PAYLOAD_EFFECT_RESPONDS", payload: {myCount: 150}})
+      return Observable.of({type: "PAYLOAD_EFFECT_RESPONDS", payload: {myCount: payload.myCount}})
     });
     //.switchMap((a) => 
     // { 
